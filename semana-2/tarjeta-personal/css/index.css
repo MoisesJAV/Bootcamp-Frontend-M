@@ -1,0 +1,116 @@
+.body {
+    background-image: url(https://c.wallhere.com/photos/70/cb/space_dark-83953.png!d);
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-position:center ;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.class {
+    background-color: yellow;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .header__container-imagen-personal{
+        margin: 0;
+    }
+    
+    .header__imagen-personal {
+        width: 8.75rem;
+        border-radius: 25%;
+        margin-top: 1rem;
+    }
+    
+    .main{
+        background-color: hsla(224, 14%, 15%, 0.603);
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        max-width: 22.5rem;
+        margin: 0 auto;
+        padding: 0 2rem;
+        border-radius: 0.5rem;
+    }
+    
+    .main__title,
+    .main__keywords,
+    .main__description,
+    .skills__title {
+    letter-spacing: 0.125rem;
+    font-weight: normal;
+    margin: 0;
+    }
+    
+    .main__description{
+        font-size: 0.75rem;
+    }
+    
+    .skills{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .skills__title{
+        font-size: 2rem;
+    }
+    
+    .skills__skills-list{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .skills__skills{
+       list-style: none; 
+       color: black;
+       background-color: aqua;
+       font-weight: bold;
+       padding: 0.5rem;
+       border-radius: 0.5rem;
+    
+    }
+    
+    .skills__skills:hover{
+        background-color: white;
+        
+        }
+    
+        .redes{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+          }
+          
+          .redes li{
+            margin-right: 15px;
+          }
+          .redes li a i{
+            font-size: 32px;
+            color: white;
+            transition: all 0.5s;
+          }
+
+          .redes li a i:hover{
+            transform: scale(1.2); 
+            color: yellow;         
+          }
+          
+          .footer-nav{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+          }
+          
