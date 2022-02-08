@@ -29,3 +29,27 @@
         margin-top: 2rem;
     }
     
+    .main{
+        background-color: hsla(224, 14%, 15%, 0.76);
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 22.5rem;
+        margin: 0 auto;
+        padding: 0px 2rem;
+        border-radius: 0.5rem;
+    }
+    
+    .main__title,
+    .main__keywords,
+    .main__description,
+    .skills__title {
+    letter-spacing: 0.125rem;
+    font-weight: normal;
+    margin: 0;
+    }
+    
+    .main__description{
+        font-size: 0.75rem;
+    }
+    
