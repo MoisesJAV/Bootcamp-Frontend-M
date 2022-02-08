@@ -309,4 +309,23 @@
         background-color: white;
         border: 0.1rem solid black;
       }
+     
+      .redes{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+      }
+      
+      .redes li{
+        margin-right: 15px;
+      }
+      .redes li a i{
+        font-size: 32px;
+      }
+      
+      .footer-nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
       
