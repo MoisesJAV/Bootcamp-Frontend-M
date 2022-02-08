@@ -61,3 +61,82 @@
     border-bottom: 0.25rem solid gold;
   }
   
+  .perfil{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  .perfil-container{
+    padding: 1rem 2rem;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-weight: bold;
+    align-items: center;
+  }
+  
+  .perfil__info{
+    display: block;
+    gap: 1rem;
+    padding: 1rem 0;
+    top: 80%;
+  }
+  
+  .perfil__info-title{
+    margin: 0;
+    color: #282c34;
+  }
+  
+  .perfil__info-description{
+    margin: 0;
+    font-size: 0.8rem;
+  }
+  
+  .perfil__info-link-container{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  }
+  
+  .perfil__info-link{
+    display: inline-block;
+    background-color: aqua;
+    border: 0.1rem solid aqua;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+  transition: all 0.5s;
+  }
+  
+  .perfil__info-link:hover{
+    background-color: white;
+  border: 0.1rem solid black;
+  }
+  
+  .perfil__cover-image{
+    display: flex;
+    justify-content: center;
+    max-width: 1024;
+  }
+  
+  .perfil__cover-image-container{
+    display: flex;
+    max-width: 18rem;
+    margin: auto;
+    border: 0.25rem solid #20232a;
+    border-radius: 25%;
+  overflow: hidden;
+  transition: all 0.5s;
+  }
+  
+  .perfil__cover-image-container:hover{
+  box-shadow: 0 0 0 0.5rem #282c34;
+  }
+  
+  .perfil__image{
+    width: 100%;
+  }
+  
