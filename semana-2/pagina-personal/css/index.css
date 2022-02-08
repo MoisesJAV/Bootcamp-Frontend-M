@@ -140,3 +140,77 @@
     width: 100%;
   }
   
+  .experiencia{
+    background-color: #282c34;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experiencia-container{
+    max-width: 1024px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+  
+  .experiencia-title{
+    margin: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .experiencia__experiencias{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .experiencia__date{
+    margin: 0;
+    color: aqua;
+  }
+  
+  .experiencia__company{
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .experiencia__role{
+    color: aqua;
+    margin: 0;
+    font-weight: 400;
+  }
+  
+  .experiencia__activities{
+    margin: 0;
+    margin-top: 0.5rem;
+    text-align: justify;
+  }
+  
+  .experiencia__activity{
+    list-style: square;
+  }
+  
+  .wave-separetor{
+  width: 100%;
+  }
+  
+  .wave-separator__container{
+  margin: 0;
+  display: flex;
+  }
+  
+  .wave-separator__container--r-180deg{
+    transform: rotate(180deg);
+    margin-top: -1px;
+  }
+  
+  .wave-separetor__wave{
+  width: 100%;
+  }
+  
