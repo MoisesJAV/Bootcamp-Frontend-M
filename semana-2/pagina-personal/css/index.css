@@ -328,4 +328,62 @@
         flex-direction: column;
         text-align: center;
       }
+     
+      @media (min-width:854px){
+        .perfil{
+        flex-direction:row;
+        text-align: start;
+        }
       
+        .perfil-container{
+          max-width: 1024px;
+          margin: auto;
+          padding: 0;
+        }
+      
+        .perfil__info{
+          flex: 1.5;
+        }
+      
+        .perfil__info-title{
+          font-size: 3rem;
+          margin: 0;
+        }
+      
+        .perfil__info-description{
+          font-size: 1.25rem;
+        }
+      
+        .perfil__info-link-container{
+          justify-content: start;
+        }
+      
+        .perfil__cover-image{
+      flex: 1;
+        }
+      
+        .perfil__cover-image-container{
+          width: 20rem;
+          margin: auto auto auto auto;
+        }
+      
+        .experiencia-container{
+      max-width: 1024px;
+      margin: auto;
+      padding: 0;
+        }
+      
+        .skills-container{
+          max-width: 1024px;
+          margin: auto;
+          padding: 0;
+        }
+      
+        .skills__skills-list{
+          gap: 2rem;
+        }
+      
+        .skills__skill{
+          font-size: 1.5rem;
+        }
+      }
