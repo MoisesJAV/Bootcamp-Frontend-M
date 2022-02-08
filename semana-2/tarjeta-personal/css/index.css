@@ -13,3 +13,19 @@
 .class {
     background-color: yellow;
 }
+
+.header {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .header__container-imagen-personal{
+        margin: 0;
+    }
+    
+    .header__imagen-personal {
+        width: 8.75rem;
+        border-radius: 25%;
+        margin-top: 2rem;
+    }
+    
