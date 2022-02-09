@@ -1,5 +1,6 @@
 :root {
-    --theme-color: rgb(95, 39, 70);
+    scroll-behavior: smooth;
+    --theme-color: rgb(180, 61, 126);
     --secondary-theme-color: #242a20;
     --text-color: #fff;
     --highlight-text-color: #61dafb;
@@ -93,4 +94,35 @@
 
 .cover__name-letter:nth-child(6) {
     color: var(--letter-6);
+}
+
+.acrostic{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+}
+
+.acrostic__stanza{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+margin: 0;
+padding: 0 2rem;
+list-style: none;
+}
+
+.acrostic__verse{
+letter-spacing: 0.1rem;
+font-weight: 400;
+text-shadow:
+ 0 0 0.5rem var(--highlight-text-color),
+ 0 0 1rem var(--highlight-text-color),
+ 0 0 1.5rem var(--highlight-text-color);
+}
+
+.acrostic__verse::first-letter{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--highlight-text-color);
 }
