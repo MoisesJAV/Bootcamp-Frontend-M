@@ -12,6 +12,15 @@
     --letter-6: #f0b9a3;
 }
 
+@keyframes zoom{
+    to{
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.2);
+    }
+}
+
 .body {
     background-image: radial-gradient(var(--theme-color), var(--secondary-theme-color));
     color: var(--theme-color);
@@ -39,6 +48,7 @@
     font-weight: 700;
     color: yellow;
     padding: 0 2rem;
+    animation: zoom 2s alternate ease-in-out infinite;
 }
 
 .cover__name-letter {
