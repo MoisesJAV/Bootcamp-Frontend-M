@@ -1,0 +1,96 @@
+:root {
+    --theme-color: rgb(95, 39, 70);
+    --secondary-theme-color: #242a20;
+    --text-color: #fff;
+    --highlight-text-color: #61dafb;
+    --letter-1: #00bef8;
+    --letter-2: #f08ec7;
+    --letter-3: #ff4d00;
+    --letter-4: #ffe600;
+    --letter-5: #26c917;
+    --letter-6: #f0b9a3;
+}
+
+.body {
+    background-image: radial-gradient(var(--theme-color), var(--secondary-theme-color));
+    color: var(--theme-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.cover {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover__name {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 4rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: yellow;
+    padding: 0 2rem;
+}
+
+.cover__name-letter {
+    position: relative;
+    transition: all 0.5s;
+    /* text-shadow:
+        0 0 1rem var(--highlight-text-color),
+        0 0 1rem var(--highlight-text-color),
+        0 0 1rem var(--highlight-text-color),
+        0 0 1rem var(--highlight-text-color); */
+}
+
+.cover__name-letter::after {
+    content: var(--letter);
+    position: absolute;
+    top: 75%;
+    left: 0;
+    filter: blur(0.25rem);
+    transform: rotateX(120deg);
+}
+
+.cover__name-letter::before {
+    content: var(--letter);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(1rem);
+}
+
+.cover__name-letter:hover {
+    filter: brightness(250%);
+}
+
+
+.cover__name-letter:nth-child(1) {
+    color: var(--letter-1);
+}
+
+.cover__name-letter:nth-child(2) {
+    color: var(--letter-2);
+}
+
+.cover__name-letter:nth-child(3) {
+    color: var(--letter-3);
+}
+
+.cover__name-letter:nth-child(4) {
+    color: var(--letter-4);
+}
+
+.cover__name-letter:nth-child(5) {
+    color: var(--letter-5);
+}
+
+.cover__name-letter:nth-child(6) {
+    color: var(--letter-6);
+}
