@@ -1,6 +1,6 @@
-SubProceso notaFinal <- promedio ( nota1, nota2, nota3 )
-	Definir notaFinal Como Real;
-	notaFinal = (nota1 + nota2 + nota3) /3;
+	SubProceso notaFinal <- promedio ( nota1, nota2, nota3 )
+		Definir notaFinal Como Real;
+		notaFinal = (nota1 + nota2 + nota3) /3;
 FinSubProceso
 
 SubProceso estado(notaFinal)
