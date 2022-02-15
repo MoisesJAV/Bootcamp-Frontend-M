@@ -363,7 +363,7 @@
     border: 0.1rem solid var(--inverse-theme-color);
     background-color: var(--theme-color);
   }
-
+  
   .skills{
     text-align: center;
     padding: 2rem 0;
@@ -536,6 +536,19 @@
       max-width: 1024px;
       margin: auto;
       padding: 0;
+        }
+
+        .projects-container {
+          display: flex;
+          align-items: center;
+          padding: 0;
+          max-width: 1024px;
+          margin: auto;
+        }
+      
+        .projects__projects {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
         }
       
         .skills-container{
