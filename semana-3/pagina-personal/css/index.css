@@ -44,14 +44,14 @@
     border-radius: 50%;
   }
   
-  .header-nav__menu-icon {
+  .header-nav__menu-icon-container {
     font-size: 2rem;
     color: var(--inverse-theme-color);
     cursor: pointer;
     transition: all 0.5s;
   }
   
-  .header-nav__menu-icon:hover {
+  .header-nav__menu-icon-container:hover {
     font-size: 2.5rem;
     filter: brightness(250%);
   }
