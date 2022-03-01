@@ -12,9 +12,7 @@
 
 .body {
   font-family: 'Open Sans', sans-serif;
-  background-color: var(--primary-theme-color);
   color: var(--text-color);
-  min-height: 200vh;
 }
 
 .header-nav__logo,
@@ -26,6 +24,7 @@
 
 .header {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -40,6 +39,10 @@
 .header-nav {
   padding: 0.5rem 0;
   transition: all 0.5s;
+}
+
+.header-nav--scroll {
+  padding: 0.25rem 0;
 }
 
 .header-nav-container {
@@ -111,7 +114,149 @@
   transition: all 0.5s;
 }
 
+.header-nav__link--scroll {
+  color: var(--primary-theme-color)
+}
+
 .header-nav__link:hover {
   color: var(--highlight-color);
   border-bottom: 0.125rem solid var(--inverse-theme-color);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero {
+  background-color: var(--primary-theme-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero__message-title {
+  font-weight: 800;
+  margin: 0;
+}
+
+.hero__message-subtitle {
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero__message-buttom {
+  position: relative;
+  z-index: 10;
+  padding: 0.5rem 2.5rem;
+  border: 0.125rem solid var(--inverse-theme-color);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.hero__message-buttom:hover {
+  background-color: var(--inverse-theme-color);
+  color: var(--inverse-text-color);
+}
+
+.hero__hero-illustration {
+  display: flex;
+}
+
+.hero__illustration-container {
+  display: flex;
+  max-width: 360px;
+  margin: 0;
+}
+
+.hero__illustration {
+  width: 100%;
+}
+
+.hero__wave-container {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.hero__wave {
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../img/hero.svg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-shadow: 
+    0 0 0.5rem var(--primary-theme-color),
+    0 0 1rem var(--primary-theme-color),
+    0 0 1.5rem var(--primary-theme-color),
+    0 0 2rem var(--primary-theme-color);
+}
+
+@media (min-width: 854px) {
+
+  .header-nav__menu-icon-container,
+  .header-nav__link-item--close-icon-container {
+    display: none;
+  }
+
+  .header-nav-container,
+  .hero-container {
+    max-width: 1024px;
+    margin: auto;
+    padding: 0;
+  }
+
+  .header-nav__link-list {
+    position: static;
+    flex-direction: row;
+    background-image: none;
+    opacity: 1;
+    width: auto;
+    pointer-events: auto;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero__message {
+    gap: 2rem;
+  }
+
+  .hero__illustration-container {
+    max-width: 640px;
+  }
 }
